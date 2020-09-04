@@ -1,0 +1,13 @@
+<form class="env-form search-form" action="<%= getUrl('/search') %>">
+   <div class="env-form-element">
+      <div class="env-form-element__control">
+         <input value="<%- query %>" placeholder="<%= i18n('searchEntries') %>" autocomplete="off"  type="search" class="env-form-input" name="query">
+      </div>
+   </div>
+
+   <div class="env-form-element">
+      <input class="env-button env-button--primary" type="submit" value="<%- buttonText %>" />
+   </div>
+</form>
+
+<%= renderer.renderComponent('Entries') %>

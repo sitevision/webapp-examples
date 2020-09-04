@@ -1,2 +1,7 @@
 node_modules
+
+dist
+
 .dev_properties.json
+
+*.iml

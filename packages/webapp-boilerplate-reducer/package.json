@@ -1,0 +1,34 @@
+{
+  "name": "webapp-boilerplate-reducer",
+  "version": "1.0.0",
+  "description": "A WebApp boilerplate including reducer",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sitevision/webapp-boilerplate-reducer.git"
+  },
+  "scripts": {
+    "build": "NODE_TLS_REJECT_UNAUTHORIZED=0 sitevision-scripts build",
+    "create-addon": "NODE_TLS_REJECT_UNAUTHORIZED=0 sitevision-scripts create-addon",
+    "deploy-prod": "sitevision-scripts deploy-prod",
+    "sign": "sitevision-scripts sign",
+    "dev": "NODE_TLS_REJECT_UNAUTHORIZED=0 sitevision-scripts dev",
+    "setup-dev-properties": "sitevision-scripts setup-dev-properties"
+  },
+  "license": "MIT",
+  "author": "SiteVision AB",
+  "bugs": {
+    "url": "https://github.com/sitevision/webapp-boilerplate-reducer/issues"
+  },
+  "homepage": "https://github.com/sitevision/webapp-boilerplate-reducer#readme",
+  "devDependencies": {
+    "@sitevision/sitevision-scripts": "^1.3.0",
+    "inquirer": "^6.2.2",
+    "jsonfile": "^5.0.0",
+    "request": "^2.88.0",
+    "zip-dir": "^1.0.2"
+  },
+  "sitevision_scripts_properties": {
+    "transpile": true
+  }
+}

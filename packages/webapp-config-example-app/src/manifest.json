@@ -1,0 +1,9 @@
+{
+   "id": "webapp-config-example-app",
+   "version": "0.0.1",
+   "name": "WebApp Config Example",
+   "author": "SiteVision AB",
+   "description": "The goal of this WebApp is to introduce how to setup WebApp configuration and how to use the different data-selectors supported by SiteVision",
+   "helpUrl": "https://developer.sitevision.se/webapps",
+   "type": "WebApp"
+}
