@@ -1,0 +1,12 @@
+{
+  "name": "webapp-examples",
+  "version": "1.0.0",
+  "description": "WebApp examples",
+  "main": "index.js",
+  "author": "SiteVision AB",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}
