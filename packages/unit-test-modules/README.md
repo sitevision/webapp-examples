@@ -1,6 +1,12 @@
 # Unit test server modules
 
-Boilerplate code for a simple WebApp with unit tests for server modules. To run the tests use commands `npm install` and `npm run test`. In order for the modules to be ran in a Node.js environment they have to be converted to the CommonJS standard.
+Boilerplate code for a simple WebApp with unit tests for server modules. To run the tests use commands `npm install` and `npm run test`. In order for the modules to be ran in a Node.js environment they have to be converted to the CommonJS standard. In order to convert a module you'll have to add the `define-shim.js` to the `src` folder in your project and add the `if`-statement to your modules.
+
+```javascript
+if (typeof define !== 'function') {
+  var define = require('../../define-shim').define(module);
+}
+```
 
 ## Building
 
