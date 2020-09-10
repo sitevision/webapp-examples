@@ -2,7 +2,6 @@ define(function(require) {
    'use strict';
 
    var
-      _          = require('underscore'),
       Component  = require('Component'),
       requester  = require('requester'),
       router     = require('router'),
@@ -66,7 +65,10 @@ define(function(require) {
       },
 
       filterState: function(state) {
-         return _.extend({}, {query: state.query, buttonText: state.buttonText});
+         return { 
+            query: state.query, 
+            buttonText: state.buttonText
+         };
       }
    });
 });
