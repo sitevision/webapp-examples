@@ -33,7 +33,7 @@ define(function(require) {
       },
 
       filterState: function(state) {
-         return _.extend({}, {name: state.name});
+         return { name: state.name };
       }
    });
 });
