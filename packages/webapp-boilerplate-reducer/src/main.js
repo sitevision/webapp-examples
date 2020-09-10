@@ -2,7 +2,6 @@ define(function(require) {
    'use strict';
 
    var
-      _          = require('underscore'),
       Component  = require('Component'),
       store      = require('store'),
       template   = require('/template/main');
