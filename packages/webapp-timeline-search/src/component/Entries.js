@@ -2,7 +2,6 @@ define(function(require) {
    'use strict';
    
    var
-      _             = require('underscore'), 
       ListComponent = require('ListComponent');
 
    return ListComponent.extend({
@@ -16,7 +15,7 @@ define(function(require) {
       childComponentPath: 'Entry',
 
       filterState: function(state) {
-         return _.extend({}, {entries: state.entries});
+         return { entries: state.entries };
       }
    });
 });
