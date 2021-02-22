@@ -2,7 +2,6 @@ define(function(require) {
    'use strict';
 
    var
-      _             = require('underscore'),
       Component     = require('Component'),
       template      = require('/template/file');
 
@@ -11,7 +10,7 @@ define(function(require) {
       template: template,
 
       filterState: function(state) {
-         return _.extend({}, {file: state.file});
+         return { file: state.file };
       }
    });
 });

@@ -2,7 +2,6 @@ define(function(require) {
    'use strict';
 
    var
-      _          = require('underscore'),
       Component  = require('Component'),
       store      = require('store'),
       template   = require('/template/main');
@@ -33,7 +32,7 @@ define(function(require) {
       },
 
       filterState: function(state) {
-         return _.extend({}, {name: state.name});
+         return { name: state.name };
       }
    });
 });
