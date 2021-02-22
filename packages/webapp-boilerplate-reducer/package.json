@@ -16,7 +16,7 @@
     "setup-dev-properties": "sitevision-scripts setup-dev-properties"
   },
   "license": "MIT",
-  "author": "SiteVision AB",
+  "author": "Sitevision AB",
   "bugs": {
     "url": "https://github.com/sitevision/webapp-boilerplate-reducer/issues"
   },

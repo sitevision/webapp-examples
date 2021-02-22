@@ -7,7 +7,7 @@
     "type": "git",
     "url": "git+https://github.com/sitevision/webapp-timeline-search.git"
   },
-  "author": "SiteVision AB",
+  "author": "Sitevision AB",
   "license": "MIT",
   "scripts": {
     "build": "NODE_TLS_REJECT_UNAUTHORIZED=0 sitevision-scripts build",

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "WebApp examples",
   "main": "index.js",
-  "author": "SiteVision AB",
+  "author": "Sitevision AB",
   "license": "MIT",
   "private": true,
   "workspaces": [
