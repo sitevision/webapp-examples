@@ -5,3 +5,5 @@ dist
 .dev_properties.json
 
 *.iml
+
+.DS_Store

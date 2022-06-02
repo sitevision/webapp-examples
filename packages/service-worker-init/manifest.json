@@ -1,0 +1,14 @@
+{
+  "id": "service-worker-init",
+  "version": "0.0.1",
+  "name": {
+    "en": "Service Worker Init"
+  },
+  "author": "Sitevision AB",
+  "description": {
+    "en": "A WebApp that creates a service worker"
+  },
+  "helpUrl": "https://developer.sitevision.se/webapps",
+  "type": "WebApp",
+  "bundled": true
+}
