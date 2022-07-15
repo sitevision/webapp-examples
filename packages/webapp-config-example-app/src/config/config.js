@@ -7,7 +7,7 @@
       emailInputs.forEach((emailInput) => {
          if (!emailInput.validity.valid) {
             valid = false
-            window.validation.addErrorMessage(emailInput, {
+            window.sv.addErrorMessage(emailInput, {
                message: emailInput.validationMessage,
                isValid: function (e) {
                   return e.target.validity.valid
@@ -16,6 +16,6 @@
          }
       })
 
-      return valid && window._validate()
+      return valid && window.sv.validate()
    }
 })()
