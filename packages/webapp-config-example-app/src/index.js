@@ -1,38 +1,42 @@
 ;(function () {
    'use strict'
 
-   var router = require('router'),
-      imageRenderer = require('ImageRenderer'),
+   const _ = require('underscore'),
+      router = require('router'),
+      properties = require('Properties'),
       appData = require('appData'),
       globalAppData = require('globalAppData')
 
    router.get('/', function (req, res) {
-      var data = {
-         image: appData.get('image', 'URI', 'displayName', 'creationDate', 'createdBy'),
-         file: appData.get('file', 'URI', 'displayName', 'description'),
-         page: appData.get('page', 'URI', 'displayName', 'published', 'publishDate'),
-         renderedImage: getRenderedImage(),
+      res.render('/', {
+         globalNumber: globalAppData.get('globalSetting'),
+
          text: appData.get('text'),
          email: appData.get('email'),
-         globalNumber: globalAppData.get('globalNumber'),
-         number: appData.get('number'),
-         numberSpinner: appData.get('numberSpinner'),
          textarea: appData.get('textarea'),
-         metadata: appData.get('metadata'),
-         template: appData.get('template'),
+         radio: appData.get('radio'),
          checkbox: appData.get('checkbox'),
+         single: appData.get('single'),
+         multiple: appData.get('multiple'),
+
+         styledRadio: appData.get('styled-radio'),
+         styledCheckbox: appData.get('styled-checkbox'),
          checkboxBoolean: appData.get('checkboxBoolean'),
-         singleSelection: appData.get('single'),
-         multipleSelection: appData.get('multiple'),
-         customSelection: appData.get('customSelection'),
-      }
+         numberSpinner: appData.get('numberSpinner'),
+         customSelect: appData.get('customSelect'),
 
-      res.render('/', data)
+         page: appData.get('page', 'displayName', 'published', 'publishDate', 'URI'),
+         content: appData.get('content', 'displayName'),
+         link: appData.get('link', 'displayName', 'URI'),
+         metadata: appData.get('metadata', 'displayName'),
+         template: appData.get('template', 'displayName'),
+
+         pages: _.map(appData.getArray('pages'), (page) => {
+            return properties.get(page, 'displayName', 'URI')
+         }),
+         images: _.map(appData.getArray('images'), (image) => {
+            return properties.get(image, 'displayName', 'creationDate', 'URL')
+         })
+      })
    })
-
-   function getRenderedImage() {
-      imageRenderer.update(appData.getNode('image'))
-
-      return imageRenderer.render()
-   }
 })()

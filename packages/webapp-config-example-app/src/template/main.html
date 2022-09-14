@@ -1,29 +1,51 @@
-<h2 class="webapp-config-example-header">Text/Textarea</h2>
-<p><strong>Text: </strong><%= text %></p>
-<p><strong>Email: </strong><%= email %></p>
-<p><strong>Number: </strong><%= number %></p>
-<p><strong>Number spinner: </strong><%= numberSpinner %></p>
-<p><strong>Global Number: </strong><%= globalNumber %></p>
-<p><strong>Textarea: </strong><%= textarea %></p>
+<article class="webapp-config-example">
+   <h1 class="webapp-config-example__header"><%= i18n('globalSettings') %></h1>
+   <p><strong><%= i18n('globalSetting') %>: </strong><%= globalNumber %></p>
+</article>
 
-<h1>Metadata</h1>
-<p><strong>Metadata: </strong><%= metadata %></p>
-<p><strong>Template: </strong><%= template %></p>
+<article class="webapp-config-example">
+   <h1 class="webapp-config-example__header"><%= i18n('htmlComponents') %></h1>
+   <p><strong><%= i18n('text') %>: </strong><%= text %></p>
+   <p><strong><%= i18n('email') %>: </strong><%= email %></p>
+   <p><strong><%= i18n('textarea') %>: </strong><%= textarea %></p>
+   <p><strong><%= i18n('radiobutton') %>: </strong><%= radio %></p>
+   <p><strong><%= i18n('checkbox') %>: </strong><%= checkbox %></p>
+   <p><strong><%= i18n('select') %>: </strong><%= single %></p>
+   <p><strong><%= i18n('multiselect') %>: </strong><%= multiple %></p>
+</article>
 
-<h1>Checkbox</h1>
-<p><strong>Checkbox: </strong><%= checkbox %></p>
-<p><strong>Checkbox boolean: </strong><%= checkboxBoolean %></p>
+<article class="webapp-config-example">
+   <h1 class="webapp-config-example__header"><%= i18n('sitevisionHtmlComponents') %></h1>
+   <p><strong><%= i18n('radiobutton') %>: </strong><%= styledRadio %></p>
+   <p><strong><%= i18n('checkbox') %>: </strong><%= styledCheckbox %></p>
+   <p><strong><%= i18n('boolCheckbox') %>: </strong><%= checkboxBoolean %></p>
+   <p><strong><%= i18n('numberSpinner') %>: </strong><%= numberSpinner %></p>
+   <p><strong><%= i18n('select') %>: </strong><%= customSelect %></p>
+</article>
 
-<h1>Selection</h1>
-<p><strong>Single selection: </strong><%= singleSelection %></p>
-<p><strong>Multiple selection: </strong><%= multipleSelection %></p>
-<p><strong>Custom selection: </strong><%= customSelection %></p>
+<article class="webapp-config-example">
+   <h1 class="webapp-config-example__header"><%= i18n('sitevisionComponents') %></h1>
+   <%= renderer.renderComponent('Page') %>
+   <hr />
+   <p><strong><%= i18n('link') %>: </strong><%= link ? link.URI : '' %></p>
+   <p><strong><%= i18n('contentNode') %>: </strong><%= content %></p>
+   <p><strong><%= i18n('metadata') %>: </strong><%= metadata %></p>
+   <p><strong><%= i18n('template') %>: </strong><%= template %></p>
+</article>
 
-<%= renderer.renderComponent('Image') %>
-
-<%= renderer.renderComponent('File') %>
-
-<%= renderer.renderComponent('Page') %>
-
-<h1>Rendered Image</h1>
-<%= renderedImage %>
+<article class="webapp-config-example">
+   <h1 class="webapp-config-example__header"><%= i18n('sitevisionListComponents') %></h1>
+   <h2 class="webapp-config-example__subheading"><%= i18n('pages') %></h2>
+   <% _.each(pages, (page) => { %>
+   <p><strong><%= i18n('name') %>: </strong><%= page.displayName %></p>
+   <p><strong><%= i18n('uri') %>: </strong><%= page.URI %></p>
+   <hr />
+   <% }) %>
+   <h2 class="webapp-config-example__subheading"><%= i18n('images') %></h2>
+   <% _.each(images, (image) => { %>
+   <img class="webapp-config-example__image" src="<%= image.URL %>" />
+   <p><strong><%= i18n('name') %>: </strong><%= image.displayName %></p>
+   <p><strong><%= i18n('creationDate') %>: </strong><%= new Date(image.creationDate) %></p>
+   <hr />
+   <% }) %>
+</article>

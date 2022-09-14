@@ -1,0 +1,9 @@
+{
+  "appData": {
+    "text": "Text field default value",
+    "numberSpinner": "4"
+  },
+  "globalAppData": {
+    "globalSetting": "42"
+  }
+}
