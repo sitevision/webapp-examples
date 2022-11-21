@@ -1,0 +1,6 @@
+{
+  "settings": "Inställningar",
+  "url": "URL",
+  "invalidUrl": "Felaktig URL. Bör se ut enligt följande exempel https://www.example.com/rest-api/1/1/4.47a38153183fad6a23eef8/headless",
+  "invalidConfig": "Felaktig konfiguration. Vänligen kontrollera inställningarna."
+}

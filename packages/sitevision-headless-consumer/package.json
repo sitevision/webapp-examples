@@ -1,0 +1,38 @@
+{
+  "name": "sitevision-api-consumer",
+  "version": "0.0.1",
+  "dependencies": {
+    "@sitevision/api": "^1.0.17",
+    "@sitevision/headless-content-renderer": "^0.0.2",
+    "@sitevision/sitevision-scripts": "^3.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "url-parse": "^1.5.10"
+  },
+  "scripts": {
+    "build": "sitevision-scripts build",
+    "create-addon": "NODE_TLS_REJECT_UNAUTHORIZED=0 sitevision-scripts create-addon",
+    "deploy-prod": "sitevision-scripts deploy-prod",
+    "sign": "sitevision-scripts sign",
+    "dev": "NODE_TLS_REJECT_UNAUTHORIZED=0 sitevision-scripts dev",
+    "setup-dev-properties": "sitevision-scripts setup-dev-properties",
+    "test": "sitevision-scripts test"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@sitevision/eslint-config-recommended",
+      "@sitevision/eslint-config-webapp-react"
+    ],
+    "environment": {
+      "browser": true,
+      "node": true,
+      "es6": true
+    }
+  },
+  "prettier": {},
+  "postcss": {
+    "plugins": [
+      "autoprefixer"
+    ]
+  }
+}

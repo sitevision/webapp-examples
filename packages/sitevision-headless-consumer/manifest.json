@@ -1,0 +1,14 @@
+{
+  "id": "sitevision.headless-consumer",
+  "version": "0.0.1",
+  "name": {
+    "en": "Headless consumer"
+  },
+  "author": "Sitevision AB",
+  "description": {
+    "en": "A WebApp that consumes the Sitevision headless API"
+  },
+  "helpUrl": "https://example.com/webapps",
+  "type": "WebApp",
+  "bundled": true
+}

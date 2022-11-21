@@ -1,0 +1,6 @@
+{
+  "settings": "Settings",
+  "url": "URL",
+  "invalidUrl": "Invalid URL, should look like https://www.example.com/rest-api/1/1/4.47a38153183fad6a23eef8/headless",
+  "invalidConfig": "Invalid configuration, please check your settings"
+}
