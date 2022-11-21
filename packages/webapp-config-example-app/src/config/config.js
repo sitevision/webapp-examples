@@ -1,23 +1,21 @@
-(function($) {
-   window.validate = function() {
-      var emailInput = document.querySelector('input[name=email]'),
-      valid = true;
+;(() => {
+   window.validate = () => {
+      const emailInputs = document.querySelectorAll('input[type=email]')
 
-      if (!isValidEmail(emailInput.value)) {
-         valid = false;
-         $(emailInput)
-            .parent()
-            .addClass('has-error')
-            .append('<p class="error-message">Email is not valid</p>')
-            .closest('.panel-body')
-            .addClass('highlight-flash');
-      }
+      let valid = true
 
-      return valid;
-   };
+      emailInputs.forEach((emailInput) => {
+         if (!emailInput.validity.valid) {
+            valid = false
+            window.sv.addErrorMessage(emailInput, {
+               message: emailInput.validationMessage,
+               isValid: function (e) {
+                  return e.target.validity.valid
+               }
+            })
+         }
+      })
 
-   function isValidEmail(value) {
-      var reg = /^[a-zA-Z0-9._%+-]+@([a-zA-Z0-9][.-]?)+[a-zA-Z0-9]+\.[a-zA-Z]{2,6}$/;
-      return reg.test(value);
+      return valid && window.sv.validate()
    }
-}(jQuery));
+})()

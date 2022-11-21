@@ -1,124 +1,177 @@
 <div class="panel panel-default">
    <div class="panel-heading">
-      <h3 class="panel-title">Node selector</h3>
+      <h3 class="panel-title"><%= i18n('htmlComponents') %></h3>
    </div>
 
    <div class="panel-body">
       <div class="form-group">
-         <input class="form-control" placeholder="Select Page" data-component="page-selector" name="page">
+         <label for="text"><%= i18n('text') %> <span class="sv-validation-required-label"><%= i18n('required') %></span></label>
+         <input class="form-control" id="text" name="text" required />
       </div>
 
       <div class="form-group">
-         <input class="form-control" placeholder="Select file" data-component="file-selector" name="file">
+         <label><%= i18n('email') %></label>
+         <input type="email" class="form-control" name="email" />
       </div>
 
       <div class="form-group">
-         <input class="form-control" placeholder="Select image" data-component="image-selector" name="image">
-      </div>
-   </div>
-</div>
-
-<div class="panel panel-default">
-      <div class="panel-heading">
-         <h3 class="panel-title">Dropdown</h3>
-      </div>
-
-      <div class="panel-body">
-         <div class="form-group">
-            <label>Metadata</label>
-            <select data-component="metadata-selector" name="metadata"></select>
-         </div>
-
-         <div class="form-group">
-            <label>Template</label>
-            <select data-component="template-selector" name="template"></select>
-         </div>
-      </div>
-</div>
-
-<div class="panel panel-default">
-   <div class="panel-heading">
-      <h3 class="panel-title">Textfield</h3>
-   </div>
-
-   <div class="panel-body">
-      <div class="form-group">
-         <label>Text</label>
-         <input class="form-control amazing-class" name="text" required>
-      </div>
-
-      <div class="form-group">
-         <label>Email</label>
-         <input type="email" class="form-control" name="email">
-      </div>
-
-      <div class="form-group">
-         <label>Number</label>
-         <input type="number" class="form-control" name="number" data-global-setting>
-      </div>
-
-      <div class="form-group">
-         <label>Textarea</label>
+         <label><%= i18n('textarea') %></label>
          <textarea class="form-control" name="textarea"></textarea>
       </div>
-   </div>
-</div>
 
-<div class="panel panel-default">
-   <div class="panel-heading">
-      <h3 class="panel-title">Radiobutton</h3>
-   </div>
-
-   <div class="panel-body">
       <div class="form-group">
-         <label><input type="radio" value="Value1" name="radio">Value 1</label>
-         <label><input type="radio" value="Value2" name="radio">Value 2</label>
-      </div>
-   </div>
-</div>
-
-<div class="panel panel-default">
-   <div class="panel-heading">
-      <h3 class="panel-title">Checkbox</h3>
-   </div>
-
-   <div class="panel-body">
-      <div class="form-group">
-         <label><input type="checkbox" value="Checkbox1" name="checkbox"/>Checkbox1</label>
-         <label><input type="checkbox" value="Checkbox2" name="checkbox"/>Checkbox2</label>
-         <label><input type="checkbox" value="Checkbox3" name="checkbox"/>Checkbox3</label>
+         <label><input type="radio" value="value1" name="radio" /><%= i18n('radiobutton') %> 1</label>
+         <label><input type="radio" value="value2" name="radio" /><%= i18n('radiobutton') %> 2</label>
       </div>
 
       <div class="form-group">
-         <label><input type="checkbox" name="checkboxBoolean" data-value-type="boolean"/>True/False</label>
+         <label><input type="checkbox" value="value1" name="checkbox" /><%= i18n('checkbox') %> 1</label>
+         <label><input type="checkbox" value="value2" name="checkbox" /><%= i18n('checkbox') %> 2</label>
+         <label><input type="checkbox" value="value3" name="checkbox" /><%= i18n('checkbox') %> 3</label>
       </div>
-   </div>
-</div>
 
-<div class="panel panel-default">
-   <div class="panel-heading">
-      <h3 class="panel-title">Select</h3>
-   </div>
-
-   <div class="panel-body">
       <div class="form-group">
-         <label>Single selection</label>
+         <label><%= i18n('select') %></label>
          <select id="select" name="single" class="form-control">
-            <option value="Value1">Value 1</option>
-            <option value="Value2">Value 2</option>
-            <option value="Value3">Value 3</option>
-            <option value="Value4">Value 4</option>
+            <option value="value1"><%= i18n('value1') %></option>
+            <option value="value2"><%= i18n('value2') %></option>
+            <option value="value3"><%= i18n('value3') %></option>
+            <option value="value4"><%= i18n('value4') %></option>
          </select>
       </div>
 
       <div class="form-group">
-         <label>Multiple selection</label>
+         <label><%= i18n('multiselect') %></label>
          <select id="multiple-select" multiple name="multiple" class="form-control">
-            <option value="Value1">Value 1</option>
-            <option value="Value2">Value 2</option>
-            <option value="Value3">Value 3</option>
-            <option value="Value4">Value 4</option>
+            <option value="value1"><%= i18n('value1') %></option>
+            <option value="value2"><%= i18n('value2') %></option>
+            <option value="value3"><%= i18n('value3') %></option>
+            <option value="value4"><%= i18n('value4') %></option>
          </select>
+      </div>
+   </div>
+</div>
+
+<div class="panel panel-default">
+   <div class="panel-heading">
+      <h3 class="panel-title"><%= i18n('sitevisionHtmlComponents') %></h3>
+   </div>
+   <div class="panel-body">
+      <div class="form-group">
+         <div class="styled-radiobutton">
+            <input name="styled-radio" id="styled-radio1" class="regular-radio" type="radio" value="value1" />
+            <label for="styled-radio1" data-fake-input></label>
+            <label for="styled-radio1"><%= i18n('radiobutton') %> 1</label>
+         </div>
+         <div class="styled-radiobutton">
+            <input name="styled-radio" id="styled-radio2" class="regular-radio" type="radio" value="value2" />
+            <label for="styled-radio2" data-fake-input></label>
+            <label for="styled-radio2"><%= i18n('radiobutton') %> 2</label>
+         </div>
+      </div>
+
+      <div class="form-group">
+         <div>
+            <div class="styled-checkbox">
+               <input name="styled-checkbox" id="styled-checkbox1" class="regular-checkbox" type="checkbox" value="value1" />
+               <label for="styled-checkbox1" tabindex="0" data-fake-input></label>
+               <label for="styled-checkbox1" class="checkbox-label"><%= i18n('checkbox') %> 1</label>
+            </div>
+         </div>
+         <div>
+            <div class="styled-checkbox">
+               <input name="styled-checkbox" id="styled-checkbox2" class="regular-checkbox" type="checkbox" value="value2" />
+               <label for="styled-checkbox2" tabindex="0" data-fake-input></label>
+               <label for="styled-checkbox2" class="checkbox-label"><%= i18n('checkbox') %> 2</label>
+            </div>
+         </div>
+         <div>
+            <div class="styled-checkbox">
+               <input name="styled-checkbox" id="styled-checkbox3" class="regular-checkbox" type="checkbox" value="value3" />
+               <label for="styled-checkbox3" tabindex="0" data-fake-input></label>
+               <label for="styled-checkbox3" class="checkbox-label"><%= i18n('checkbox') %> 3</label>
+            </div>
+         </div>
+      </div>
+
+      <div class="form-group">
+         <div class="styled-checkbox">
+            <input name="checkboxBoolean" id="checkboxBoolean" class="regular-checkbox" type="checkbox" data-value-type="boolean" />
+            <label for="checkboxBoolean" tabindex="0" data-fake-input></label>
+            <label for="checkboxBoolean" class="checkbox-label"><%= i18n('boolCheckbox') %></label>
+         </div>
+      </div>
+
+      <div class="form-group">
+         <label><%= i18n('numberSpinner') %></label>
+         <input class="form-control" data-component="number-spinner" data-min="0" data-max="10" data-step="2" name="numberSpinner" />
+      </div>
+
+      <div class="form-group">
+         <label><%= i18n('select') %></label>
+         <select name="customSelect" data-component="custom-selector" data-searchable>
+            <% _.each(selectValues, (value) => { %>
+            <option value="<%= value %>"><%= i18n(value) %></option>
+            <% }); %>
+         </select>
+      </div>
+   </div>
+</div>
+
+<div class="panel panel-default">
+   <div class="panel-heading">
+      <h3 class="panel-title"><%= i18n('sitevisionComponents') %></h3>
+   </div>
+
+   <div class="panel-body">
+      <div class="form-group">
+         <label for="page"><%= i18n('page') %></label>
+         <input
+            class="form-control"
+            placeholder="<%= i18n('pagePlaceholder') %>"
+            data-component="page-selector"
+            id="page"
+            name="page"
+            data-removable
+         />
+      </div>
+
+      <div class="form-group">
+         <label><%= i18n('contentNode') %></label>
+         <input class="form-control" data-component="content-node-selector" name="content" />
+      </div>
+
+      <div class="form-group">
+         <label><%= i18n('link') %></label>
+         <input class="form-control" data-component="link-selector" name="link" />
+      </div>
+
+      <div class="form-group">
+         <label><%= i18n('metadata') %></label>
+         <select data-component="metadata-selector" name="metadata"></select>
+      </div>
+
+      <div class="form-group">
+         <label><%= i18n('template') %></label>
+         <select data-component="template-selector" name="template"></select>
+      </div>
+   </div>
+</div>
+
+<div class="panel panel-default">
+   <div class="panel-heading">
+      <h3 class="panel-title"><%= i18n('sitevisionListComponents') %></h3>
+   </div>
+
+   <div class="panel-body">
+      <div class="form-group">
+         <label><%= i18n('pageList') %></label>
+         <input type="hidden" data-component="page-list" name="pages" data-sortable />
+      </div>
+
+      <div class="form-group">
+         <label><%= i18n('imageList') %></label>
+         <input type="hidden" data-component="image-list" name="images" />
       </div>
    </div>
 </div>

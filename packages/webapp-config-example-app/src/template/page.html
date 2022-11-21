@@ -1,7 +1,7 @@
-<h1>Page</h1>
 <% if (page) { %>
-   <p><strong>Page name: </strong><%= page.displayName %></p>
-   <p><strong>URI: </strong><%= page.URI %></p>
-   <p><strong>Published: </strong><%= page.published %></p>
-   <p><strong>Publish date: </strong><%= page.publishDate %></p>
+<h2 class="webapp-config-example__subheading"><%= i18n('page') %></h2>
+<p><strong><%= i18n('name') %>: </strong><%- page.displayName %></p>
+<p><strong><%= i18n('uri') %>: </strong><%- page.URI %></p>
+<p><strong><%- page.published ? i18n('published') : i18n('unpublished') %></p>
+<p><strong><%= i18n('publishDate') %>: </strong><%- new Date(page.publishDate) %></p>
 <% } %>
