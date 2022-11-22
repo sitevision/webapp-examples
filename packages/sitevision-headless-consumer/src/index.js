@@ -5,6 +5,9 @@ import appData from "@sitevision/api/server/appData";
 import App from "./components/App";
 import requester from "@sitevision/api/server/Requester";
 import endecUtil from "@sitevision/api/server/EndecUtil";
+import versionUtil, {
+  OFFLINE_VERSION,
+} from "@sitevision/api/server/VersionUtil";
 import UrlParse from "url-parse";
 import i18n from "@sitevision/api/common/i18n";
 
@@ -35,6 +38,12 @@ router.get("/", (req, res) => {
       );
     })
     .fail((error) => {
-      res.status(500).send(endecUtil.escapeXML(error));
+      if (versionUtil.getCurrentVersion() === OFFLINE_VERSION) {
+        res.send(/* html */ `
+          <p>${i18n.get("httpErrorMessage")}</p>
+          <pre>${endecUtil.escapeXML(error)}</pre>`);
+      } else {
+        console.error("Could not get headless content from ", url, error);
+      }
     });
 });
