@@ -1,0 +1,17 @@
+{
+  "id": "ssr-push-state",
+  "version": "0.0.1",
+  "name": {
+    "en": "SSR Push State"
+  },
+  "author": "My Company",
+  "description": {
+    "en": "A WebApp that demonstrates how to use the SSR Push State feature."
+  },
+  "helpUrl": "https://example.com/webapps",
+  "type": "WebApp",
+  "bundled": true,
+  "requiredLibs": {
+    "react": "17.0.2"
+  }
+}
