@@ -1,6 +1,5 @@
 import * as React from "react";
 import PropTypes from "prop-types";
-import styles from "./App.scss";
 import router from "@sitevision/api/common/router";
 import Link from "../Link";
 
@@ -16,7 +15,7 @@ const App = ({ state: initialState }) => {
   }, []);
 
   return (
-    <div className={styles.app}>
+    <div>
       <h1>currentState: {state}</h1>
 
       <ul>
