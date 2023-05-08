@@ -2,9 +2,9 @@
   "name": "sitevision-api-consumer",
   "version": "0.0.1",
   "dependencies": {
-    "@sitevision/api": "^1.0.17",
+    "@sitevision/api": "^2023.4.2",
     "@sitevision/headless-content-renderer": "^0.0.2",
-    "@sitevision/sitevision-scripts": "^3.0.0",
+    "@sitevision/sitevision-scripts": "^3.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "url-parse": "^1.5.10"

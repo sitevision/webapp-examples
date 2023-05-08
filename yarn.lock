@@ -1803,15 +1803,15 @@
   resolved "https://registry.npmjs.org/@sitevision/api/-/api-1.0.20.tgz"
   integrity sha512-HAYji7ClQtSDpuAP50wMyx0Hx09zx2zgB320v8DZz68I5kwjsKP/SYtxekuSn61LQCQqKOW60RZqkIT5lp00TQ==
 
-"@sitevision/api@^1.0.17":
-  version "1.0.18"
-  resolved "https://registry.npmjs.org/@sitevision/api/-/api-1.0.18.tgz"
-  integrity sha512-xEO+jO5hUDe7zqo2nl+ijWqLPUh1hD4mPx1Wh896IuWlZ3lKcNQR2a3QlPxaDSgfNbwYs8Ier4exLmb0Vr285w==
-
 "@sitevision/api@^2023.2.2":
   version "2023.2.2"
   resolved "https://registry.npmjs.org/@sitevision/api/-/api-2023.2.2.tgz"
   integrity sha512-7bzidmPtOxvY2Km6aWIm3VNPGBNF2Dj90KfYaSPz4h2Q+HLTIVjpOxqtshGiV3XfRr+V2fDovUOAZ2mJ+njOtQ==
+
+"@sitevision/api@^2023.4.2":
+  version "2023.4.2"
+  resolved "https://registry.yarnpkg.com/@sitevision/api/-/api-2023.4.2.tgz#d2c43a4d46b777bacfa783390c8526a815275492"
+  integrity sha512-lpYEcntM+Y/FGKRlhBdZprRNeelim94PQxRevMASqSbDkZ6vY/+wDq0GnXb0+ThPYVzOtKf6pb241cBlcIqPVA==
 
 "@sitevision/babel-preset-react-client@^1.0.2", "@sitevision/babel-preset-react-client@^1.0.3":
   version "1.0.3"
@@ -1939,50 +1939,6 @@
     webpack "^5.37.1"
     zip-dir "^2.0.0"
 
-"@sitevision/sitevision-scripts@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.npmjs.org/@sitevision/sitevision-scripts/-/sitevision-scripts-3.0.0.tgz"
-  integrity sha512-dGvAnwWVw5MrHCWGoxbqjbI/x2ZrtT24aHEpfFBfcNn+sC16aO/J+2nsXgT+WYKzAlJ+OpWqUiJFlqSR6iec7A==
-  dependencies:
-    "@babel/cli" "^7.19.3"
-    "@babel/core" "^7.20.2"
-    "@babel/preset-env" "^7.20.2"
-    "@sitevision/babel-preset-react-client" "^1.0.3"
-    "@sitevision/babel-preset-react-server" "^1.0.3"
-    "@sitevision/eslint-config-recommended" "^1.0.3"
-    "@sitevision/eslint-config-webapp-react" "^1.0.3"
-    "@testing-library/jest-dom" "^5.16.5"
-    "@testing-library/react" "^12.1.5"
-    autoprefixer "^10.4.13"
-    babel-jest "^29.3.1"
-    babel-loader "^9.1.0"
-    chalk "^5.1.2"
-    copy-webpack-plugin "^11.0.0"
-    cross-spawn "^7.0.3"
-    css-loader "^6.7.2"
-    eslint "^8.27.0"
-    form-data "^4.0.0"
-    fs-extra "^10.1.0"
-    handlebars "^4.7.7"
-    identity-obj-proxy "^3.0.0"
-    inquirer "^9.1.4"
-    jest "^29.3.1"
-    jest-cli "^29.3.1"
-    jest-environment-jsdom "^29.3.1"
-    json-loader "^0.5.7"
-    mini-css-extract-plugin "^2.6.1"
-    mini-svg-data-uri "^1.4.4"
-    node-fetch "^3.3.0"
-    nodemon "^2.0.20"
-    postcss "^8.4.19"
-    postcss-loader "^7.0.1"
-    prettier "^2.7.1"
-    resolve-bin "^1.0.1"
-    sass "^1.56.1"
-    sass-loader "^13.2.0"
-    webpack "^5.75.0"
-    zip-dir "^2.0.0"
-
 "@sitevision/sitevision-scripts@^3.1.1":
   version "3.1.1"
   resolved "https://registry.npmjs.org/@sitevision/sitevision-scripts/-/sitevision-scripts-3.1.1.tgz"
@@ -2035,6 +1991,55 @@
   version "3.1.6"
   resolved "https://registry.npmjs.org/@sitevision/sitevision-scripts/-/sitevision-scripts-3.1.6.tgz"
   integrity sha512-uREbPNA6VTLc+u603dJ+Vh+xhbp83azIlH9rfooniJE1yywwErXnkjKluamJy5msOLak70MRlAQaxaV+0GHUvg==
+  dependencies:
+    "@babel/cli" "^7.19.3"
+    "@babel/core" "^7.20.2"
+    "@babel/preset-env" "^7.20.2"
+    "@babel/preset-typescript" "^7.18.6"
+    "@jest/globals" "^29.3.1"
+    "@sitevision/babel-preset-react-client" "^1.0.3"
+    "@sitevision/babel-preset-react-server" "^1.0.4"
+    "@sitevision/eslint-config-recommended" "^1.0.3"
+    "@sitevision/eslint-config-typescript" "^1.0.1"
+    "@sitevision/eslint-config-webapp-react" "^1.0.3"
+    "@testing-library/jest-dom" "^5.16.5"
+    "@testing-library/react" "^12.1.5"
+    autoprefixer "^10.4.13"
+    babel-jest "^29.3.1"
+    babel-loader "^9.1.0"
+    chalk "^5.1.2"
+    copy-webpack-plugin "^11.0.0"
+    cross-spawn "^7.0.3"
+    css-loader "^6.7.2"
+    eslint "^8.27.0"
+    form-data "^4.0.0"
+    fs-extra "^10.1.0"
+    handlebars "^4.7.7"
+    identity-obj-proxy "^3.0.0"
+    inquirer "^9.1.4"
+    jest "^29.3.1"
+    jest-cli "^29.3.1"
+    jest-environment-jsdom "^29.3.1"
+    json-loader "^0.5.7"
+    mini-css-extract-plugin "^2.6.1"
+    mini-svg-data-uri "^1.4.4"
+    node-fetch "^3.3.0"
+    nodemon "^2.0.20"
+    postcss "^8.4.19"
+    postcss-loader "^7.0.1"
+    prettier "^2.7.1"
+    resolve-bin "^1.0.1"
+    sass "^1.56.1"
+    sass-loader "^13.2.0"
+    ts-loader "^9.4.1"
+    typescript "^4.9.3"
+    webpack "^5.75.0"
+    zip-dir "^2.0.0"
+
+"@sitevision/sitevision-scripts@^3.2.0":
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@sitevision/sitevision-scripts/-/sitevision-scripts-3.2.0.tgz#34a99a1510ae3b67aebfdeba4ba115b31dfdc621"
+  integrity sha512-7mWNnYWWVdxwp7Mdh6Rpf3VvZG77zlRDHJlfyBEoGcK6gSAAIDWw4yxrSJ4NX7XxotPxNtdCgvYZYNMHAtB9Dw==
   dependencies:
     "@babel/cli" "^7.19.3"
     "@babel/core" "^7.20.2"
