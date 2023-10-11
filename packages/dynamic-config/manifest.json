@@ -1,0 +1,14 @@
+{
+  "id": "dynamic-config-example",
+  "version": "0.0.1",
+  "name": {
+    "en": "Dynamic configuration example"
+  },
+  "author": "Sitevision",
+  "description": {
+    "en": "A dynamic configuration example"
+  },
+  "helpUrl": "https://example.com/webapps",
+  "type": "WebApp",
+  "bundled": true
+}
