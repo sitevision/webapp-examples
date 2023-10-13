@@ -1,0 +1,11 @@
+{
+  "add": "Add link",
+  "link": "Link",
+  "selectLink": "Select link target",
+  "text": "Link text",
+  "selectText": "Select link text",
+  "image": "Image",
+  "selectImage": "Select image",
+  "errorMessage": "Mandatory field. Value required",
+  "noLinks": "No links configured. Share a link?"
+}

@@ -1,0 +1,11 @@
+{
+  "add": "Lägg till länk",
+  "link": "Länk",
+  "selectLink": "Välj länkmål",
+  "text": "Länktext",
+  "selectText": "Ange länktext",
+  "image": "Bild",
+  "selectImage": "Ange bild",
+  "errorMessage": "Obligatoriskt fält. Värde måste anges",
+  "noLinks": "Inga länkar uppsatta. Dela en länk?"
+}

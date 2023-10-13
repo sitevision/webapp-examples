@@ -1,0 +1,23 @@
+.link {
+  transition: transform 0.2s;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.image {
+  border-radius: var(--env-border-radius-medium);
+  width: 100%;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 0.5em;
+  background-color: var(--env-ui-color-brand);
+  color: var(--env-ui-color-brand-contrast);
+  border-radius: var(--env-border-radius-medium);
+}
