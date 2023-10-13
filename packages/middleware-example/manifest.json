@@ -1,0 +1,17 @@
+{
+  "id": "middleware-eaxmple",
+  "version": "0.0.1",
+  "name": {
+    "en": "Middleware example"
+  },
+  "author": "My Company",
+  "description": {
+    "en": "Check permission and collect data in middleware"
+  },
+  "helpUrl": "https://example.com/webapps",
+  "type": "WebApp",
+  "bundled": true,
+  "requiredLibs": {
+    "react": "17.0.2"
+  }
+}
