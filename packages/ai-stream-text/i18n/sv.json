@@ -1,0 +1,8 @@
+{
+  "settings": "Inställningar",
+  "typeYourProtocolQuestion": "Skriv din fråga om protokollet",
+  "ask": "Fråga",
+  "selectProtocolToAskAbout": "Välj ett protokoll att fråga om",
+  "protocolInsight": "Protokollinsikt",
+  "selectLLM": "Välj en LLM"
+}

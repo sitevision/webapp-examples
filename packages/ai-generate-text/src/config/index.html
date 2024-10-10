@@ -1,0 +1,35 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><%= i18n('settings') %></h3>
+  </div>
+
+  <div class="panel-body">
+    <div class="form-group">
+      <label><%= i18n('selectLLM') %></label>
+      <select
+        data-component="llm-configuration-selector"
+        name="llm"
+        required
+      ></select>
+    </div>
+    <div class="form-group">
+      <label><%= i18n('selectChannel') %></label>
+      <select id="select" name="channel" data-component="custom-selector">
+        <% for (let i = 0; i < channels.length; i++) { %>
+        <option value="<%= channels[i].id %>"><%= channels[i].name %></option>
+        <% } %>
+      </select>
+    </div>
+    <div class="form-group">
+      <label><%= i18n('maxEntries') %></label>
+      <input
+        class="form-control"
+        data-component="number-spinner"
+        data-min="1"
+        data-max="100"
+        data-step="1"
+        name="maxEntries"
+      />
+    </div>
+  </div>
+</div>
