@@ -1,0 +1,8 @@
+{
+  "settings": "Innstillinger",
+  "typeYourProtocolQuestion": "Skriv spørsmålet ditt om protokollen",
+  "ask": "Spør",
+  "selectProtocolToAskAbout": "Velg en protokoll å spørre om",
+  "protocolInsight": "Protokollinnsikt",
+  "selectLLM": "Velg en LLM"
+}

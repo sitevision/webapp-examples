@@ -1,0 +1,8 @@
+{
+  "settings": "Settings",
+  "typeYourProtocolQuestion": "Type your protocol question",
+  "ask": "Ask",
+  "selectProtocolToAskAbout": "Select a protocol to ask about",
+  "protocolInsight": "Protocol Insight",
+  "selectLLM": "Select a LLM"
+}

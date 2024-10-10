@@ -1,0 +1,22 @@
+{
+  "id": "protocol-insight",
+  "version": "0.0.1",
+  "name": {
+    "en": "Protocol Insight",
+    "no": "Protokollinnsikt",
+    "sv": "Protokollinsikt"
+  },
+  "author": "Sitevision",
+  "description": {
+    "en": "Select a file and chat with an AI about its content.",
+    "no": "Velg en fil og chat med en AI om innholdet.",
+    "sv": "Välj en fil och chatta med en AI om innehållet."
+  },
+  "helpUrl": "https://developer.sitevision.se/archives/developer-news/developer-news/2024-09-24-webinar-ai-opportunities-for-developers",
+  "type": "WebApp",
+  "bundled": true,
+  "maxUploadSizeInMB": 0,
+  "requiredLibs": {
+    "react": "17.0.2"
+  }
+}

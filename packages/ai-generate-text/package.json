@@ -1,0 +1,26 @@
+{
+  "name": "ai-generate-text",
+  "version": "0.0.1",
+  "dependencies": {
+    "@sitevision/api": "^2024.8.1",
+    "@sitevision/sitevision-scripts": "^4.0.0"
+  },
+  "scripts": {
+    "build": "sitevision-scripts build",
+    "create-addon": "sitevision-scripts create-addon",
+    "deploy-prod": "sitevision-scripts deploy-prod",
+    "sign": "sitevision-scripts sign",
+    "dev": "sitevision-scripts dev",
+    "setup-dev-properties": "sitevision-scripts setup-dev-properties",
+    "test": "sitevision-scripts test"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@sitevision/eslint-config-recommended"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true,
+    "arrowParens": "always"
+  }
+}

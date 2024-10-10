@@ -1,0 +1,12 @@
+{
+  "id": "activity-tracker",
+  "version": "0.0.1",
+  "name": "Activity tracker",
+  "author": "Sitevision",
+  "description": "Tracks user generated content, summarizes and posts to a channel.",
+  "helpUrl": "https://developer.sitevision.se/archives/developer-news/developer-news/2024-09-24-webinar-ai-opportunities-for-developers",
+  "type": "RESTApp",
+  "bundled": true,
+  "maxUploadSizeInMB": 0,
+  "requirePrivileged": true
+}
