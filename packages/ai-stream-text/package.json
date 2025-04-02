@@ -2,11 +2,12 @@
   "name": "ai-stream-text",
   "version": "0.0.1",
   "dependencies": {
-    "@sitevision/api": "^2024.8.1",
-    "@sitevision/sitevision-scripts": "^4.0.0",
-    "classnames": "^2.5.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "@sitevision/api": "^2025.3.1",
+    "@sitevision/sitevision-scripts": "^5.0.0",
+    "@types/react": "^18.3.20",
+    "@types/react-dom": "^18.3.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "scripts": {
     "build": "sitevision-scripts build",

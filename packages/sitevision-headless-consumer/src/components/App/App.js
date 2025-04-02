@@ -4,10 +4,7 @@ import { HeadlessContentRenderer } from "@sitevision/headless-content-renderer";
 
 const App = ({ baseUrl, contentNodes }) => {
   return (
-    <HeadlessContentRenderer
-      contentNodes={contentNodes}
-      baseUrl={baseUrl}
-    ></HeadlessContentRenderer>
+    <HeadlessContentRenderer contentNodes={contentNodes} baseUrl={baseUrl} />
   );
 };
 

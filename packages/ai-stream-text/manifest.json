@@ -17,6 +17,6 @@
   "bundled": true,
   "maxUploadSizeInMB": 0,
   "requiredLibs": {
-    "react": "17.0.2"
+    "react": "18.3.1"
   }
 }
