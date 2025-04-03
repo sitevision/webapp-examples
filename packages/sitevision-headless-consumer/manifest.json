@@ -10,5 +10,8 @@
   },
   "helpUrl": "https://example.com/webapps",
   "type": "WebApp",
-  "bundled": true
+  "bundled": true,
+  "requiredLibs": {
+    "react": "18.3.1"
+  }
 }

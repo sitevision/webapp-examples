@@ -1,7 +1,7 @@
 import * as React from "react";
-import ReactDOM from "react-dom";
 import App from "./components/App";
+import { hydrateRoot } from "react-dom/client";
 
 export default (initialState, el) => {
-  ReactDOM.hydrate(<App state={initialState.state} />, el);
+  hydrateRoot(el, <App state={initialState.state} />);
 };
