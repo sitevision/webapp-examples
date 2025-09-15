@@ -9,3 +9,6 @@ name = "javascript"
     "jest",
     "browser"
   ]
+
+[[transformers]]
+name = "prettier"
