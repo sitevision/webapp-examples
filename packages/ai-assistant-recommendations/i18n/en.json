@@ -5,6 +5,5 @@
   "queryPlaceholder": "Looking for tips on templates...",
   "queryHelp": "Give a brief explanation of what you would like to learn more about and we'll help you find the right course.",
   "submit": "Find course",
-  "queryErrorMessage": "An error occurred when making a recommendation. Please try again.",
-  "configureServiceUser": "Set up a service user to be able to use the AI functionality."
+  "queryErrorMessage": "An error occurred when making a recommendation. Please try again."
 }

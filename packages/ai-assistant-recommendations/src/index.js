@@ -4,23 +4,8 @@ import appData from "@sitevision/api/server/appData";
 import router from "@sitevision/api/common/router";
 import properties from "@sitevision/api/server/Properties";
 import timestampUtil from "@sitevision/api/server/TimestampUtil";
-import privileged from "@sitevision/api/server/privileged";
-import versionUtil from "@sitevision/api/server/VersionUtil";
-import i18n from "@sitevision/api/common/i18n";
-import systemUserUtil from "@sitevision/api/server/SystemUserUtil";
 
 router.get("/", (req, res) => {
-  if (!privileged.isConfigured()) {
-    if (versionUtil.getCurrentVersion() === versionUtil.OFFLINE_VERSION) {
-      return res.send(
-        `<p class="env-text env-text--error">${i18n.get(
-          "configureServiceUser"
-        )}</p>`
-      );
-    }
-
-    return;
-  }
   res.agnosticRender("", {});
 });
 
@@ -69,14 +54,8 @@ function generateAnswer({ res, input, conversationIdentifier }) {
     .set("Cache-Control", "no-cache")
     .set("X-Conversation-Identifier", conversationIdentifier);
 
-  if (systemUserUtil.isAnonymous()) {
-    // AI calls require being logged in. If the webapp allows anonymous users, we need to use privileged to make the call.
-    privileged.doPrivilegedAction(() =>
-      aiAssistant.askAssistant(aiAssistantNode, options)
-    );
-  } else {
-    aiAssistant.askAssistant(aiAssistantNode, options);
-  }
+  // AI calls require being logged in. If the webapp allows anonymous users, we need to use privileged to make the call.
+  aiAssistant.askAssistant(aiAssistantNode, options);
 }
 
 function querySemanticIndex({ aiAssistantNode, input }) {
@@ -108,8 +87,7 @@ function querySemanticIndex({ aiAssistantNode, input }) {
     presentation.push(
       `Presentation end time: ${formatTimestamp(programtodate)}`
     );
-    presentation.push(`Presentation title: ${displayName}`);
-    presentation.push(`Presentation link: ${URL}`);
+    presentation.push(`Presentation title: [${displayName}](${URL})`);
     presentation.push(`Presentation text: ${text}`);
     presentations.push(presentation);
   });

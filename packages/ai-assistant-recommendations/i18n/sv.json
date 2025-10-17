@@ -5,6 +5,5 @@
   "queryPlaceholder": "Önskar tips kring mallar...",
   "queryHelp": "Ge en kort förklaring på vad du skulle vilja lära dig mer om så hjälper vi dig hitta rätt pass.",
   "submit": "Hitta pass",
-  "queryErrorMessage": "Ett fel uppstod när en rekommendation skulle göras. Vänligen försök igen.",
-  "configureServiceUser": "Ställ in en tjänsteanvändare för att kunna använda AI-funktionaliteten."
+  "queryErrorMessage": "Ett fel uppstod när en rekommendation skulle göras. Vänligen försök igen."
 }

@@ -16,6 +16,5 @@
   "maxUploadSizeInMB": 0,
   "requiredLibs": {
     "react": "18.3.1"
-  },
-  "requirePrivileged": true
+  }
 }
