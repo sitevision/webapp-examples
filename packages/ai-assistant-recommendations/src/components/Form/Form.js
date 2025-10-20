@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import i18n from "@sitevision/api/common/i18n";
 import router from "@sitevision/api/common/router";
 import security from "@sitevision/api/common/security";
+import SearchIcon from "./SearchIcon";
 
 const Form = ({ setResponses, isProcessing, setIsProcessing }) => {
   const queryInputId = React.useId();
@@ -64,10 +65,9 @@ const Form = ({ setResponses, isProcessing, setIsProcessing }) => {
         };
 
         setResponses((responses) => {
-          const updatedResponses = [...responses];
-          updatedResponses.pop();
-          updatedResponses.push(response);
-          return updatedResponses;
+          const newResponses = responses.slice();
+          newResponses[newResponses.length - 1] = response;
+          return newResponses;
         });
       }
 
@@ -99,17 +99,7 @@ const Form = ({ setResponses, isProcessing, setIsProcessing }) => {
         </label>
         <div className="env-form-control">
           <div className="env-form-label" aria-hidden="true">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              className="env-icon env-icon--small"
-            >
-              <g>
-                <path d="M10 19.31C8.82001 19.31 7.64001 19.08 6.52001 18.63C4.21001 17.7 2.41001 15.93 1.44001 13.64C0.47001 11.35 0.44001 8.82 1.37001 6.52C2.30001 4.21 4.07001 2.41 6.36001 1.44C7.80001 0.830002 9.39001 0.580002 10.94 0.740002C11.49 0.800002 11.89 1.29 11.83 1.84C11.77 2.39 11.28 2.8 10.73 2.73C9.51001 2.61 8.27001 2.79 7.14001 3.28C5.34001 4.04 3.95001 5.46 3.22001 7.27C2.49001 9.08 2.51001 11.07 3.27001 12.86C4.03001 14.65 5.45001 16.05 7.26001 16.78C9.07001 17.51 11.06 17.49 12.85 16.73C14.65 15.97 16.04 14.55 16.77 12.74C16.98 12.23 17.56 11.98 18.07 12.19C18.58 12.4 18.83 12.98 18.62 13.49C17.69 15.8 15.92 17.6 13.63 18.57C12.46 19.07 11.23 19.32 9.99001 19.32L10 19.31Z"></path>
-                <path d="M22.3101 23.31C22.0501 23.31 21.8001 23.21 21.6001 23.02L15.1601 16.58C14.7701 16.19 14.7701 15.56 15.1601 15.17C15.5501 14.78 16.1801 14.78 16.5701 15.17L23.0101 21.61C23.4001 22 23.4001 22.63 23.0101 23.02C22.8101 23.22 22.5601 23.31 22.3001 23.31H22.3101Z"></path>
-                <path d="M17.7 1.32001C17.63 0.970007 17.32 0.710007 16.96 0.710007C16.6 0.710007 16.29 0.960007 16.22 1.32001C15.85 3.18001 14.39 4.66001 12.59 5.02001C12.24 5.09001 11.99 5.40001 11.99 5.76001C11.99 6.12001 12.24 6.42001 12.59 6.50001C14.39 6.86001 15.85 8.34001 16.22 10.2C16.29 10.55 16.6 10.81 16.96 10.81C17.32 10.81 17.63 10.56 17.7 10.2C18.07 8.34001 19.53 6.86001 21.33 6.50001C21.68 6.43001 21.93 6.12001 21.93 5.76001C21.93 5.40001 21.68 5.10001 21.33 5.02001C19.53 4.66001 18.07 3.18001 17.7 1.32001Z"></path>
-              </g>
-            </svg>
+            <SearchIcon />
           </div>
           <input
             type="text"
