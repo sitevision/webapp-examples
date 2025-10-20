@@ -1,0 +1,4 @@
+.markdown :global(.env-text) :global(.env-text) {
+  // Avoid multiplying font sizes on nested .env-text elements.
+  font-size: inherit;
+}

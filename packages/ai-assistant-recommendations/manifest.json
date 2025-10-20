@@ -1,0 +1,20 @@
+{
+  "id": "ai-assistant-recommendations",
+  "version": "0.0.1",
+  "name": {
+    "en": "AI Assistant Recommendations",
+    "sv": "AI Assistant Rekommendationer"
+  },
+  "author": "Sitevision",
+  "description": {
+    "en": "A web app that provides AI-powered recommendations.",
+    "sv": "En webbapp som ger AI-drivna rekommendationer."
+  },
+  "helpUrl": "",
+  "type": "WebApp",
+  "bundled": true,
+  "maxUploadSizeInMB": 0,
+  "requiredLibs": {
+    "react": "18.3.1"
+  }
+}
