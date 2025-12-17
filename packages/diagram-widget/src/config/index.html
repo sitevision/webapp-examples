@@ -1,0 +1,20 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><%= i18n('settings') %></h3>
+  </div>
+
+  <div class="panel-body">
+    <div class="form-group">
+      <label for="no-of-objects"><%= i18n('noOfObjects') %></label>
+      <input
+        class="form-control"
+        id="no-of-objects"
+        name="noOfObjects"
+        data-component="number-spinner"
+        data-min="50"
+        data-max="500"
+        data-step="10"
+      />
+    </div>
+  </div>
+</div>

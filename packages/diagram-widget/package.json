@@ -1,0 +1,34 @@
+{
+  "name": "diagram-widget",
+  "version": "0.0.1",
+  "dependencies": {
+    "@sitevision/api": "^2025.10.1",
+    "@sitevision/sitevision-scripts": "^6.0.1",
+    "@types/react": "^18.3.27",
+    "@types/react-dom": "^18.3.7",
+    "chart.js": "^4.5.1",
+    "react": "^18.3.1",
+    "react-chartjs-2": "^5.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "scripts": {
+    "build": "sitevision-scripts build",
+    "create-addon": "sitevision-scripts create-addon",
+    "deploy-prod": "sitevision-scripts deploy-prod",
+    "sign": "sitevision-scripts sign",
+    "dev": "sitevision-scripts dev",
+    "setup-dev-properties": "sitevision-scripts setup-dev-properties"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@sitevision/eslint-config-recommended",
+      "@sitevision/eslint-config-webapp-react"
+    ]
+  },
+  "prettier": {},
+  "postcss": {
+    "plugins": [
+      "autoprefixer"
+    ]
+  }
+}

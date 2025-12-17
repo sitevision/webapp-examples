@@ -1,0 +1,20 @@
+{
+  "id": "diagram-widget",
+  "version": "0.0.1",
+  "name": {
+    "en": "Content type diagram widget"
+  },
+  "author": "Sitevision AB",
+  "description": {
+    "en": "A diagram widget for Sitevision content types"
+  },
+  "helpUrl": "https://example.com/webapps",
+  "type": "Widget",
+  "bundled": true,
+  "maxUploadSizeInMB": 0,
+  "supportedWidgetSizes": ["small", "medium", "large", "extra_large"],
+  "supportedWidgetContexts": ["page", "site"],
+  "requiredLibs": {
+    "react": "18.3.1"
+  }
+}
