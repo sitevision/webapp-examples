@@ -1,0 +1,9 @@
+{
+  "settings": "Settings",
+  "assistant": "Assistant",
+  "queryLabel": "What would you like to know more about?",
+  "queryPlaceholder": "Looking for tips on templates...",
+  "queryHelp": "Give a brief explanation of what you would like to learn more about and we'll help you find the right course.",
+  "submit": "Find course",
+  "queryErrorMessage": "An error occurred when making a recommendation. Please try again."
+}
