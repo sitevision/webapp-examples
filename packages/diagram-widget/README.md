@@ -1,6 +1,6 @@
-# webapp-boilerplate
+# Diagram widget
 
-Boilerplate code for a simple WebApp
+A widget displaying how you could use an external [Chart library](https://www.chartjs.org/docs/latest/) while still utilizing the theme colors from [Envision](https://envisionui.io/dashboard/widget-colors/).
 
 ## Developing
 
