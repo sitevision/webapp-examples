@@ -1,0 +1,93 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Settings</h3>
+  </div>
+
+  <div class="panel-body">
+    <div class="form-group">
+      <label>Assistant</label>
+      <select
+        name="aiAssistant"
+        data-component="custom-selector"
+        data-removable
+        required
+      >
+        <% aiAssistants.forEach(function(aiAssistant) { %>
+        <option value="<%- aiAssistant.id %>"><%- aiAssistant.name %></option>
+        <% }); %>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <h4>Notify by</h4>
+
+      <label class="styled-radiobutton-app">
+        <input
+          type="radio"
+          id="notifyBy_messages"
+          name="notifyBy"
+          value="messages"
+          data-enables="#notifyBy_messages_settings"
+        />
+        Messages
+      </label>
+      <div class="form-group indent" id="notifyBy_messages_settings">
+        <label>Channel/label>
+        <select
+          name="channel"
+          data-component="custom-selector"
+          data-removable
+          required
+        >
+          <% channels.forEach(function(channel) { %>
+          <option value="<%- channel.id %>"><%- channel.name %></option>
+          <% }); %>
+        </select>
+        <p class="help-block">
+          Ensure service user is a member of the selected channel
+        </p>
+      </div>
+
+      <label class="styled-radiobutton-app">
+        <input
+          type="radio"
+          id="notifyBy_timeline"
+          name="notifyBy"
+          value="timeline"
+          data-enables="#notifyBy_timeline_settings"
+        />
+        Timeline
+      </label>
+      <div class="form-group indent" id="notifyBy_timeline_settings">
+        <label>Group</label>
+        <input
+          class="form-control"
+          data-types="sv:collaborationGroupPage"
+          data-component="page-selector"
+          name="group"
+          data-removable
+          required
+        />
+        <p class="help-block">
+          Ensure service user are able to post in theselected group
+        </p>
+      </div>
+
+      <label class="styled-radiobutton-app">
+        <input
+          class="regular-radio"
+          type="radio"
+          id="notifyBy_mail"
+          name="notifyBy"
+          value="mail"
+          data-enables="#notifyBy_mail_settings"
+        />
+        Mail
+      </label>
+      <div class="form-group indent" id="notifyBy_mail_settings">
+        <label>Mail</label>
+        <input class="form-control" type="email" name="mail" required />
+      </div>
+    </div>
+  </div>
+</div>

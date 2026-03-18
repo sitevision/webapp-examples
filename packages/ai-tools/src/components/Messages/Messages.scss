@@ -1,0 +1,60 @@
+.chatWindow {
+  margin-bottom: var(--env-spacing-small);
+}
+
+.messageList {
+  max-height: 75vh;
+  overflow-y: auto;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0,
+    rgba(0, 0, 0, 0.85) 20px,
+    #000 36px,
+    #000 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0,
+    rgba(0, 0, 0, 0.85) 20px,
+    #000 36px,
+    #000 100%
+  );
+}
+
+.messageRow {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.messageBubble {
+  max-width: 85%;
+  padding: var(--env-spacing-x-small) var(--env-spacing-small);
+  margin: var(--env-spacing-xx-small) var(--env-spacing-x-small);
+  border-radius: var(--env-border-radius-medium);
+  word-break: break-word;
+}
+
+.messageRowUser {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.messageRowAssistant {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.messageRow + .messageRow {
+  margin-top: var(--env-spacing-small);
+}
+
+.messageBubbleUser {
+  background-color: var(--env-ui-color-brand);
+  * {
+    color: var(--env-ui-color-brand-contrast) !important;
+  }
+}
+
+.messageBubbleAssistant {
+  background-color: var(--env-section-background-color-05);
+}

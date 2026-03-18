@@ -1,0 +1,7 @@
+.form {
+  border-radius: var(--env-form-input-border-radius);
+
+  button {
+    border: 1px solid var(--env-form-input-border-color);
+  }
+}

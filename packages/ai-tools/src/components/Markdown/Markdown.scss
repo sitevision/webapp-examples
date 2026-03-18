@@ -1,0 +1,25 @@
+.markdown :global(.env-text) :global(.env-text) {
+  // Avoid multiplying font sizes on nested .env-text elements.
+  font-size: inherit;
+}
+
+.markdown,
+pre.markdown {
+  max-width: 100%;
+}
+
+.markdown,
+pre.markdown {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.markdown pre code,
+pre.markdown code {
+  // Make sure long code blocks are scrollable
+  display: block;
+  overflow-x: auto;
+  padding: var(--env-spacing-x-small) var(--env-spacing-small);
+  border-radius: var(--env-border-radius-medium);
+  border: 1px solid var(--env-border-color-05);
+}
