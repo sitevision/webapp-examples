@@ -1,6 +1,6 @@
 # ai-tools
 
-Example WebApp about how you can utilize the [aiAssistant SDK](https://developer.sitevision.se/docs/webapps/sdk/aiassistant) with TOOLS. The WebApp is created as a complement to a presentation made for Sitevision Tech Summit 2026. Even if not present it should serve as a quick example of a small chat bot.
+Example WebApp about how you can utilize the [aiAssistant SDK](https://developer.sitevision.se/docs/webapps/sdk/aiassistant) with TOOLS. The WebApp is created as a complement to a presentation made for Sitevision Tech Summit 2026. Even if not present it should serve as a quick example of a small chat bot. The presentation is available to view at [minasidor.sitevision.se](https://minasidor.sitevision.se/pa-gang/sitevision-play/video/workshop-bygg-smarta-assistenter-med-integrationer-och-tools). Presentation is in Swedish.
 
 The app is created to exemplify tool usage.
 
