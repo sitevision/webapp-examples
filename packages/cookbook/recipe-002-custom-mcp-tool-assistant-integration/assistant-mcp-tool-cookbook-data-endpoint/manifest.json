@@ -1,0 +1,12 @@
+{
+  "id": "assistant-mcp-tool-cookbook-data-endpoint",
+  "version": "1.0.0",
+  "name": "assistant-mcp-tool-cookbook-data-endpoint",
+  "author": "Sitevision AB",
+  "description": "A REST endpoint for the Assistant MCP Tool Cookbook sample data.",
+  "helpUrl": "https://example.com/restapps",
+  "type": "RESTApp",
+  "bundled": true,
+  "maxUploadSizeInMB": 0,
+  "headlessCustomModuleName": "assistant-mcp-tool-cookbook-data-endpoint"
+}
