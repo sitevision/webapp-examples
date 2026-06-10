@@ -45,6 +45,17 @@ mcp.registerTool(
       items = fetchItems({ type, latest, query: strictQuery });
     }
 
+    if (items.length === 0) {
+      return {
+        content: [
+          {
+            type: "text",
+            text: "",
+          },
+        ],
+      };
+    }
+
     return {
       content: [
         {
