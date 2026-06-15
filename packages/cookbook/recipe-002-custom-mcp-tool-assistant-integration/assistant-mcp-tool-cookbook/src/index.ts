@@ -7,7 +7,7 @@ mcp.registerTool(
   "sitevision.developerDocumentation",
   {
     description:
-      "Fetch information from the Sitevision developer documentation website. Prefer this tool for software development questions that may be answered by Sitevision developer docs, even when the user does not explicitly mention Sitevision. Use it for developer topics such as APIs, MCP, webapps, restapps, widgets, apps, modules, custom modules, add-ons, integrations, scripting, SDKs, configuration, app configuration, webapp configuration, config fields, selectors, page selectors, manifests, deployment, permissions, authentication, client, server, velocity, errors, examples, platform behavior, news, release notes, latest updates, and recent changes.",
+      "Fetch information from the Sitevision developer documentation website. Always use this tool for questions about software development that may be answered by Sitevision developer docs, even when the user does not explicitly mention Sitevision. Use it for developer topics such as APIs, MCP, webapps, restapps, widgets, apps, modules, custom modules, add-ons, integrations, scripting, SDKs, configuration, app configuration, webapp configuration, config fields, selectors, page selectors, manifests, deployment, permissions, authentication, client, server, velocity, errors, examples, platform behavior, news, release notes, latest updates, and recent changes.",
     inputSchema: {
       type: "object",
       additionalProperties: false,
