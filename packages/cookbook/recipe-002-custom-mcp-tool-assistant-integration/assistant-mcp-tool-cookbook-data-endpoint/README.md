@@ -1,6 +1,6 @@
 # assistant-mcp-tool-cookbook-data-endpoint
 
-This is a supporting RESTApp developed for the cookbook example: recipe-002-custom-mcp-tool-assistant-integration
+This is a supporting RESTApp developed for the cookbook example: [recipe-002-custom-mcp-tool-assistant-integration](https://developer.sitevision.se/archives/cookbook/cookbook-recipes/2026-06-16-integrating-custom-mcp-tools-with-the-sitevision-assistant-module)
 
 ## Developing
 
