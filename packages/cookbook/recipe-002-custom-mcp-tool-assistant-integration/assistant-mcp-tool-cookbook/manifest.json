@@ -1,0 +1,12 @@
+{
+  "id": "assistant-mcp-tool-cookbook",
+  "version": "1.0.0",
+  "name": "assistant-mcp-tool-cookbook",
+  "author": "Sitevision AB",
+  "description": "A cookbook example for how to integrate and MCP Tool with the Sitevision Assistant module.",
+  "helpUrl": "https://example.com/mcpserver",
+  "type": "MCPServer",
+  "bundled": true,
+  "headlessCustomModuleName": "assistant-mcp-tool-cookbook"
+}
+  
